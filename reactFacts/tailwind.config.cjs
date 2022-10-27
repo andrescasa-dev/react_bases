@@ -13,6 +13,9 @@ module.exports = {
       },
       backgroundImage:{
         'react': "url('./src/assets/react-back.png')"
+      },
+      gridTemplateColumns:{
+        'main': 'minmax(0em, 1fr) minmax(0em, 60rem) minmax(0em,1fr)'
       }
     },
   },
