@@ -1,5 +1,3 @@
-import img from '../data/img/swimmer.png'
-
 export default function Card({children, title, openSpots,price, location, coverImg}){
   const tagText = (openSpots === 0 && 'SOLD OUT') || (location === 'Online' && 'ONLINE')
   return (

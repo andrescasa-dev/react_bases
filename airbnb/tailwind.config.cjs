@@ -11,7 +11,14 @@ module.exports = {
       },
       fontFamily:{
         sans: ['Poppins', 'sans']
-      }
+      },
+      boxShadow:{
+        header: '0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1)'
+      },
+      backgroundImage:{
+        "hero-bg": 'url(http://localhost:5173/src/assets/hero-big.png)',
+        "hero-sm": 'url(http://localhost:5173/src/assets/hero-small.png)'
+      },
     },
   },
   plugins: [],
