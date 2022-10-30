@@ -13,10 +13,10 @@ export default function App() {
     )
   })
   return (
-    <div>
+    <div className="grid grid-cols-main pb-10">
       <Header />
       <Hero />
-      <div className="flex gap-3 m-10 overflow-auto">
+      <div className="flex gap-6 p-10 overflow-auto col-start-2">
         {cardComponents}
       </div>
     </div>

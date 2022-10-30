@@ -19,6 +19,9 @@ module.exports = {
         "hero-bg": 'url(http://localhost:5173/src/assets/hero-big.png)',
         "hero-sm": 'url(http://localhost:5173/src/assets/hero-small.png)'
       },
+      gridTemplateColumns:{
+        main: "minmax(1em, 1fr) minmax(0rem, 70em) minmax(1em, 1fr)"
+      }
     },
   },
   plugins: [],
