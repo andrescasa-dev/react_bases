@@ -13,14 +13,14 @@ module.exports = {
         sans: ['Poppins', 'sans']
       },
       boxShadow:{
-        header: '0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1)'
+        header: '0px 0.98256px 10.4564px rgba(0, 0, 0, 0.1)'
       },
       backgroundImage:{
         "hero-bg": 'url(http://localhost:5173/src/assets/hero-big.png)',
         "hero-sm": 'url(http://localhost:5173/src/assets/hero-small.png)'
       },
       gridTemplateColumns:{
-        main: "minmax(1em, 1fr) minmax(0rem, 70em) minmax(1em, 1fr)"
+        main: "minmax(3em, 1fr) minmax(0rem, 80em) minmax(3em, 1fr)"
       }
     },
   },

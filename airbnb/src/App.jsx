@@ -16,7 +16,7 @@ export default function App() {
     <div className="grid grid-cols-main pb-10">
       <Header />
       <Hero />
-      <div className="flex gap-6 p-10 overflow-auto col-start-2">
+      <div className="flex gap-6 py-10 overflow-auto col-start-2">
         {cardComponents}
       </div>
     </div>
