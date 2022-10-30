@@ -1,12 +1,18 @@
-import heroBig from './assets/hero-big.png'
+import Card from "./components/Card"
+import Stats from "./components/Stats"
+import cards from "./data/cards"
+
 export default function App() {
+  const cardComponents = cards.map(card =>{
+    return (
+      <Card key={card.id} {...card}>
+        <Stats {...card.stats}/>
+      </Card>
+    )
+  })
   return (
-    <div className='grid justify-center text-center'>
-      <h1 className="text-accent font-sans font-light">testing text nnn</h1>
-      <h1 className="text-accent font-sans">testing text nnn</h1>
-      <h1 className="text-accent font-sans font-semibold">testing text nnn</h1>
-      <h1 className="text-accent font-sans font-bold">testing text nnn</h1>
-      <img src={heroBig}/>
+    <div className="flex gap-3 m-10">
+      {cardComponents}
     </div>
   )
 }
