@@ -19,7 +19,7 @@ module.exports = {
         "header": "linear-gradient(360deg, #262525 0%, #2B2B2B 100%)"
       },
       gridTemplateColumns:{
-        "main": "minmax(2em, 1fr) minmax(0, 60em) minmax(2em, 1fr)"
+        "main": "minmax(2em, 1fr) minmax(0, 80em) minmax(2em, 1fr)"
       },
       gridTemplateRows:{
         "main": "max-content 1fr max-content"
