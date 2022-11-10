@@ -11,8 +11,9 @@ module.exports = {
         "meme": "'Oswald', sans-serif"
       },
       colors:{
-        "main": "#2B2B2B",
-        "accent": "#C60000",
+        "main": "#94CEF2",
+        "accent": "#87B4D0",
+        "third": "#226371",
         "back": "#262525",
       },
       backgroundColor:{
