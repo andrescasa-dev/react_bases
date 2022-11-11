@@ -27,11 +27,11 @@ export default function Main(){
   }
 
   useEffect(()=>{ 
-    // const key = import.meta.env.VITE_UNSPLASH_ACCESS_KEY
-    // const perPage = 40, query = "sky", orientation = "landscape";
-    // fetch(`https://api.unsplash.com/search/photos/?query=${query}?&per_page=${perPage}&orientation=${orientation}&client_id=${key}`)
-    //   .then((response)=> response.json())
-    //   .then(data=> setPictureList(data.results))
+    const key = import.meta.env.VITE_UNSPLASH_ACCESS_KEY
+    const perPage = 40, query = "sky", orientation = "landscape";
+    fetch(`https://api.unsplash.com/search/photos/?query=${query}?&per_page=${perPage}&orientation=${orientation}&client_id=${key}`)
+      .then((response)=> response.json())
+      .then(data=> setPictureList(data.results))
   },[])
 
   return (
