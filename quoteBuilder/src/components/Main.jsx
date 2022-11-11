@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 import Button from "./Button";
-import MemeSlider from "./Picture"
+import Picture from "./Picture"
 import SlideButton from "./SlideButton";
 import saveIcon from "../assets/save.svg"
 import downloadIcon from "../assets/download.svg"
@@ -35,16 +35,17 @@ export default function Main(){
   },[])
 
   return (
-    <div className="relative pt-6 flex flex-col col-start-2 col-end-3 items-center">
-        {/* <SlideButton/> */}
-        <div className="fixed bottom-0 right-0 left-0 grid grid-cols-main">
-          <menu className=' flex gap-1 col-start-2 col-end-[-2]'>
-            <li><Button icon={downloadIcon} alt="download" /></li>
-            <li><Button icon={saveIcon} alt="save" /></li>
-            <li className="grow"><SlideButton/></li> 
-          </menu>
+    <div className="md:grid-cols-main-md relative pt-6 grid grid-cols-main justify-center col-start-1 col-end-[-1] ">
+        <menubar className="md:grid-cols-main-md md:gap-y-4 md:grid-rows-main md:row-start-1 md:relative grid grid-cols-main fixed bottom-0 right-0 left-0 col-start-1 col-end-[-1] md:gap-x-0 gap-x-1">
+            <li className="md:row-start-2 md:col-start-3 col-start-2 list-none"><Button icon={downloadIcon} tailwind={["md:rounded-tr-[1.3em]"]} alt="download" /></li>
+            <li className="md:row-start-3 md:col-start-3 list-none"><Button icon={saveIcon} tailwind={["md:rounded-br-[1.3em]"]} alt="save" /></li>
+            <li className="med:row-start-1 md:col-start-2 md:col-end-[-3] grow col-start-4 col-end-[-2] list-none"><SlideButton/></li>           
+        </menubar>
+        <div className="z-10 md:grid-cols-main-md md:grid-rows-main md:row-start-1  min-h-[90vh] grid grid-cols-main col-start-1 col-end-[-1]">
+          <div className="md:row-start-2 md:col-start-2 md:col-end-[-3] md:mx-2  col-start-2 col-end-[-2]">
+            <Picture src={getMemeSrc() || DEFAULT_IMG} handleNext={nextMeme} handlePrev={prevMeme}/>
+          </div>
         </div>
-        <MemeSlider src={getMemeSrc() || DEFAULT_IMG} handleNext={nextMeme} handlePrev={prevMeme}/>
     </div>
   )
 }

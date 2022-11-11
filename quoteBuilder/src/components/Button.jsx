@@ -1,9 +1,24 @@
-export default function Button({icon, alt}){
+export default function Button({icon, alt, tailwind=[]}){
+  const tailwindAll = [
+    "w-full",
+    "min-w-[4em]", 
+    "h-full", 
+    "p-2",
+    "px-2", 
+
+    "flex",
+    "justify-center",
+    "items-center",
+    "rounded-md",
+
+    "bg-accent",
+
+    [...tailwind]
+  ].join(" ")
+
   return (
-    <li className="rounded-sm px-2 bg-accent">
-      <button className="w-full h-full p-2 flex justify-center">
-        <img className="" src={icon} alt={alt} />
+      <button className={tailwindAll}>
+        <img className="max-w-[55%] max-h-[55%] w-full" src={icon} alt={alt} />
       </button>
-    </li>
   )
 }
