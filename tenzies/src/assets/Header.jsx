@@ -1,4 +1,4 @@
-export default function Header(){
+export default function Header () {
   return (
     <div className="text-center">
       <h1 className="text-4xl font-bold text-main">Tenzies</h1>
